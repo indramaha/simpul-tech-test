@@ -11,7 +11,12 @@
 .chatbtn-child {
     display: flex;
     gap: 26px;
+}
 
+.chatbtn-child-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 26px;
 }
 
 .chatbtn-child-bg {
@@ -45,11 +50,39 @@
     -o-border-radius: 50%;
 }
 
+.chatbtn-todolist-open {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    background-color: #F8B76B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .chatbtn-message {
     border-radius: 50%;
     width: 60px;
     height: 60px;
     background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.chatbtn-message-open {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    background-color: #8785FF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,6 +100,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.chatbtn-btnchosen {
+    width: 68px;
+    height: 68px;
+    background-color: #4F4F4F;
+    position: fixed;
+    z-index: -100;
+    right: 49px;
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
