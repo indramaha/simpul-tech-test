@@ -1,5 +1,6 @@
 const initialState = {
-    listPostData: []
+    listPostData: [],
+    isMessageOneDone : false
 }
 
 export const messageReducer = (state= initialState, action) => {
@@ -7,7 +8,14 @@ export const messageReducer = (state= initialState, action) => {
         case "GET_POST_LIST":
             return {
                 ... initialState,
-                listPostData: action.payload.listPostData
+                listPostData: action.payload.listPostData,
+                isMessageOneDone: action.payload.isMessageOneDone
+            }
+        case "VERIF_STEP_ONE":
+            return{
+                ... initialState,
+                listPostData: action.payload.listPostData,
+                isMessageOneDone: action.payload.isMessageOneDone
             }
         default:
             return state

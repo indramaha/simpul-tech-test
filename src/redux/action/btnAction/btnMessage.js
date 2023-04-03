@@ -17,11 +17,12 @@ export const handleOpenMessage = () => (dispatch) => {
     axios
         .get("https://dummyapi.io/data/v1/post", config)
         .then((res) => {
-            console.log(res);
+            // console.log(res);
             dispatch({
                 type: "GET_POST_LIST",
                 payload: {
-                    listPostData: res.data.data
+                    listPostData: res.data.data,
+                    isMessageOneDone: false
                 }
             })
             dispatch({
@@ -34,7 +35,7 @@ export const handleOpenMessage = () => (dispatch) => {
             })
         })
         .catch((err) => {
-            console.log(err);
+            // console.log(err);
             dispatch({
                 type: "CLICK_CHAT",
                 payload: {

@@ -72,3 +72,26 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
+.message-content-section {
+    display: flex;
+    gap: 17px;
+    padding-bottom: 37px;
+    border-bottom: 1px solid #828282;
+}
+
+.message-content-body-title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-content-body p span {
+    color: #4F4F4F;
+    font-weight: bold;
+}
+
+.message-content-body p {
+    color: #4F4F4F;
+}
