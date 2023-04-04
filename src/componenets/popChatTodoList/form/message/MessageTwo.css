@@ -20,3 +20,59 @@
     display: flex;
     flex-direction: column;
 }
+
+.messagetwo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 21px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.messagetwo-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.text-blue {
+    color: #2F80ED;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.messagetwo-body {
+    width: 690px;
+    overflow-y: auto;
+    height: 726px;
+    padding: 13px 20px;
+}
+
+.messagetwo-inputfield {
+    display: flex;
+    gap: 13px;
+    padding: 19px;
+}
+
+.messagetwo-inputfield input {
+    height:40px;
+    width: 580px;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.messagetwo-inputfield button {
+    background-color: #2F80ED;
+    padding: 14px 21px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
