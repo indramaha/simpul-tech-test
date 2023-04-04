@@ -2,12 +2,13 @@ import { useSelector } from "react-redux";
 import BtnComp from "../popChatTodoList/Btn/BtnComp"
 import Message from "./form/message/Message";
 import TodoList from "./form/todoList/TodoList";
+import MessageTwo from "./form/message/MessageTwo";
 
 const Chat = () => {
     const state = useSelector(rootReducers => rootReducers)
-    console.log(state);
+    // console.log(state);
     const chatOpen = state.btnState.isChatOpen
-    const todoListOpen = state. btnState.isTodoListOpen
+    const todoListOpen = state.btnState.isTodoListOpen
     const messageOneDone = state.messageState.isMessageOneDone
     const messageTwoDone = false
     return (  
@@ -19,7 +20,7 @@ const Chat = () => {
                     )
                 } else if (chatOpen === true && messageTwoDone === false){
                     return(
-                        <div></div>
+                        <MessageTwo />
                     )
                 } else if (todoListOpen === true){
                     return(
