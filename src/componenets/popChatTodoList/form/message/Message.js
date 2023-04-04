@@ -1,20 +1,16 @@
-import { useState } from "react";
 import ISearch from "../../../../icons/ISearch";
 import "./Message.css"
 import CircularProgress from '@mui/material/CircularProgress';
 import { useDispatch, useSelector } from "react-redux";
-import IUser from "../../../../icons/IUser";
 import IDoubleUser from "../../../../icons/IDoubleUser";
 // import 'moment/locale/id'
 import moment from "moment/moment";
 
 const Message = () => {
     const dispatch = useDispatch()
-    const [selectDataOne, setSelectDataOne] = useState(false)
     const state = useSelector(rootReducers => rootReducers)
-    console.log(state);
+    // console.log(state);
 
-    const loading = state.btnState.isLoading
     const postListData = state.messageState.listPostData
 
     const handleSelectStpOne = (props) => {
